@@ -44,3 +44,29 @@ function mul(a,b) {
     console.log("數字相乘的結果:" + (a*b));
 }
 mul(999,7);
+// 物件{物件資料名稱:物件資料值}
+var car ={
+    brand: "BMW",
+    cc:2000,
+    color: "gold",
+
+    drive: function(){
+        console.log("開車中.....");
+    }
+}
+console.log("汽車的牌子:"+ car.brand);
+
+car.drive();
+// 陣列array
+var numbers=[10,100,40]
+
+console.log("陣列第三筆資料:"+ numbers[2]);
+
+numbers[0]=999;
+console.log("陣列第一筆資料:"+ numbers[0]);
+
+// 比較運算式子
+var testA =100;
+var testB =50;
+
+console.log(testA != testB);
