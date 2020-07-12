@@ -108,7 +108,22 @@ score.onchange =() =>{
 // 迭代器:初始值處理 -遞增 ++
 for (let i = 0; i < 10; i++) {
     console.log("迴圈:"+i);
-    
 }
 
+// 陣列
+var products=[ "冰美式","卡布奇諾","摩卡"];
 
+// products.length陣列。長度(數量)
+
+for (let i = 0; i < products.length; i++) {
+    console.log(products[i]) ;
+}
+// 透過類別取的複數元素，結果為陣列
+var ps=document.getElementsByClassName("product");
+
+console.log(ps);
+
+for (let i = 0; i < ps.length; i++) {
+    ps[i].innerText=products[i];
+    
+}
