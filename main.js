@@ -70,3 +70,45 @@ var testA =100;
 var testB =50;
 
 console.log(testA != testB);
+
+// if(布林值){當布林值為true會執行}
+// else{當布林值為false 會執行}
+
+var boolTest=true;
+if (boolTest) {
+    console.log("布林值為true!");
+} else {
+    console.log("布林值為false!");
+    
+}
+
+// 如果分數 >= 60 :及格
+// 如果分數 >= 60 :補考
+// 如果分數 :被當
+var score =document.getElementById("score");
+var result =document.getElementById("result");
+
+score.onchange =() =>{
+    var s =parseInt(score.value);
+
+    if(s >= 60){
+        result.innerText="分數: " + s +" - 及格";
+    }
+    else if (s >=40) {
+        result.innerText="分數: " + s +" - 補考";
+    }
+    else{
+        result.innerText="分數: " + s +" - 被當";
+
+    }
+}
+// 迴圈 for
+// 初始值:迴圈開始的值
+// 條件:當條件為TRUE 執行， false 結束迴圈
+// 迭代器:初始值處理 -遞增 ++
+for (let i = 0; i < 10; i++) {
+    console.log("迴圈:"+i);
+    
+}
+
+
